@@ -204,7 +204,7 @@ else
         "--help")    eternumHelp    "$@" ;;
         "--version") eternumVersion "$@" ;;
         "list")      eternumList    "$@" ;;
-        "pin")       eternumList    "$@" ;;
+        "pin")       eternumPin     "$@" ;;
         "rename")    eternumRename  "$@" ;;
         "unpin")     eternumUnpin   "$@" ;;
         "stats")     eternumStats   "$@" ;;
