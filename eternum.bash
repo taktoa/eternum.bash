@@ -24,7 +24,12 @@ function notFound () {
 { type "curl"   &> /dev/null; } || notFound "curl"
 { type "gpg2"   &> /dev/null; } || notFound "gpg2"
 { type "jq"     &> /dev/null; } || notFound "jq"
+{ type "sed"    &> /dev/null; } || notFound "sed"
+{ type "grep"   &> /dev/null; } || notFound "grep"
 { type "cat"    &> /dev/null; } || notFound "cat"
+{ type "tr"     &> /dev/null; } || notFound "tr"
+{ type "tail"   &> /dev/null; } || notFound "tail"
+{ type "head"   &> /dev/null; } || notFound "head"
 
 if test -z "${XDG_CONFIG_HOME}"; then
     if test -n "${HOME}"; then
